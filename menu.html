@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
+    <title>Friendly Restaurant</title>
+</head>
+<body>
+    <header>
+        <h1>Frindly Restaurant</h1>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./menu.html">Menu</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+   
+    <section id="qabili" class="menu-item container">
+        <img src="./images/Bobak-Radbin-FremontAfghanKabob-48.jpg" alt="Qabili">
+        <h2>Qabili</h2>
+        <p>Ingredients: Meat, rice, raisins, carrots, onion, garlic, spices</p>
+    </section>
+    <section id="zirishk-palaw" class="menu-item container">
+        <img src="./images/zereshk-polo-ba-morgh-sideview.webp" alt="Zirishk Palaw">
+        <h2>Zirishk Palaw</h2>
+        <p>Ingredients: Rice, chicken, zirishk, and spices</p>
+    </section>
+    <section id="bolani" class="menu-item container">
+        <img src="./images/Bolani.jpg" alt="Bolani">
+        <h2>Bolani</h2>
+        <p>Ingredients: Wheat flour, vegetables, and potato</p>
+    </section>
+    <section id="vegetable-soup" class="menu-item container">
+        <img src="./images/Homemade-Vegetable-Soup-Recipe-4-1200.jpg" alt="Vegetable Soup">
+        <h2>Vegetable Soup</h2>
+        <p>Ingredients: Peas, lentils, onions, carrots, tomatoes, lemon juice</p>
+    </section>
+    <section id="adas-palaw" class="menu-item container">
+        <img src="./images/Adas Palaw.jpg" alt="Adas Palaw">
+        <h2>Adas Palaw</h2>
+        <p>Ingredients: Lentils, rice, oil, garlic, and onion</p>
+    </section>
+    <section>
+        <h2>Order Now</h2>
+        <form>
+            <label for="dish">Choose a dish:</label>
+            <select id="dish" name="dish">
+                <option value="qabili">Qabili</option>
+                <option value="zirishk-palaw">Zirishk Palaw</option>
+                <option value="bolani">Bolani</option>
+                <option value="vegetable-soup">Vegetable Soup</option>
+                <option value="adas-palaw">Adas Palaw</option>
+            </select>
+            <br>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" required>
+            <br>
+            <button type="submit">Order</button>
+        </form>
+    </section>
+</body>
+</html>
